@@ -9,8 +9,11 @@ import febase from '../assets/febase.png'
 import utva from '../assets/utva.png'
 import vica from '../assets/vica.png'
 import cover from '../assets/cover.png'
-
-
+import graced from '../assets/graced.png'
+import medcore from '../assets/medcore.png'
+import esteem from '../assets/esteem.png'
+import esteemadmin from '../assets/esteemadmn.png'
+import mydonation from '../assets/mydonationn.png'
 import mindhaven from '../assets/mndhaven.jpeg'
 import lnedln from '../assets/lnedln.jpeg'
 import locaton from '../assets/locaton.jpeg'
@@ -699,6 +702,11 @@ function ProjectsPage({ open, onClose }) {
     6: utva, 7: febase, 8: medum, 9: oldport, 10: fstudy,
     11: atla, 12: pexels, 13: fver, 14: vica,
     15: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+    16: esteem,
+    17: esteemadmin,
+  18: medcore,
+  19: graced,
+  20:mydonation
   };
 
   const CLONES = [
@@ -717,6 +725,38 @@ function ProjectsPage({ open, onClose }) {
     { id:13, cat:'personal', name:'Fiverr Clone',               desc:'Freelance marketplace clone with gig listings, category browsing, and seller profile pages.', url:'https://fiverrrrrrr.netlify.app/', repo:`https://github.com/${GITHUB_USERNAME}/fiverr`, tech:['HTML','CSS3','JavaScript'], color:'#f472b6' },
     { id:14, cat:'client',   name:'Vicas Couture',              desc:'Fashion brand e-commerce site with product galleries, lookbook pages, and a streamlined checkout flow.', url:'https://www.vicascouture.com/', repo:null, tech:['React Js','SPRING-BOOT'], color:'#818cf8' },
     { id:15, cat:'client',   name:'Vicas Couture Dashboard',    desc:'Admin dashboard for the Vicas Couture brand — inventory, orders, and analytics in a clean UI.', url:'https://www.linkedin.com/posts/anyia-favour-803842313_fullstackdeveloper-springboot-nextjs-ugcPost-7409155900390715392-wPCK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE-uJgMBrQOPC6QXMCK4D0CnxOX1sN9rCFI', repo:null, tech:['Next Js','Tailwind CSS','SPRING-BOOT'], color:'#818cf8' },
+    {
+  id:16, cat:'client', name:'Esteem Glorich Properties — Web',
+  desc:'Public-facing real estate platform with property listings, search/filtering, and an AI virtual assistant (built on Groq) that answers visitor questions and helps them find listings in real time.',
+  url:'https://www.esteemglorichproperties.com/', repo:null,
+  tech:['React Js','node js','Groq AI'], color:'#6ee7b7'
+},
+{
+  id:17, cat:'client', name:'Esteem Glorich Properties — Admin Dashboard',
+  desc:'Admin portal for managing property listings, inquiries, and platform data, with secure authentication and encrypted-session sign-in.',
+  url:'https://www.linkedin.com/posts/anyia-favour-803842313_fullstackdeveloper-admindashboard-webdevelopment-activity-7467859188119920640-yrGC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE-uJgMBrQOPC6QXMCK4D0CnxOX1sN9rCFI', repo:null,
+  tech:['React Js','node js'], color:'#818cf8'
+},
+{
+  id:18, cat:'personal', name:'MediCore HMS',
+  desc:'Hospital management system built as 11 independent Java/Spring Boot microservices with a React/TypeScript frontend, communicating over REST and Kafka. Containerized with Docker, orchestrated on Kubernetes, and deployed to production on AWS EKS (via ECR + an Application Load Balancer). Patients book appointments and pay real invoices through Flutterwave and Payaza with webhook-confirmed payments, and a Groq-powered AI symptom checker gives specialty/urgency triage.',
+  url:'http://a0dc9961a66e6413a9d486f227d6d961-1669577640.us-east-1.elb.amazonaws.com/', repo:null,
+  tech:['Java/Spring Boot','Kubernetes','AWS EKS','Docker','Kafka','Groq AI'], color:'#f472b6'
+},
+{
+  id:19, cat:'personal', name:'Graced',
+  desc:'A platform connecting verified Christian professionals to job opportunities through church-community trust networks. Instead of a faith badge visible at hiring/selection time (a legal liability), verification stays visible inside the community and general-market applications show a normal CV — merit-based hiring stays intact while church-vouched referrals carry the trust. Launching congregation-first in Nigeria.',
+  url:"https://www.linkedin.com/posts/anyia-favour-803842313_buildinpublic-faithandwork-startup-share-7479797064789549056-ZaW1/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAE-uJgMBrQOPC6QXMCK4D0CnxOX1sN9rCFI", repo:null,
+  tech:['Next.js','TypeScript','Spring Boot','SQL'],
+  color:'#818cf8'
+},
+{
+  id:20, cat:'client', name:'MyDonation',
+  desc:'A faith-driven, transparent giving platform connecting believers to verified churches, missions, and legacy campaigns worldwide. Built the donor dashboard and giving flow on the frontend team — recurring monthly giving, one-time gifts in Naira/USD/GBP, anonymous donation option, and a full giving history with receipts. Campaigns require bi-weekly progress updates or funding pauses automatically.',
+  url:'https://mydonationn.com/', repo:null,
+  tech:['Next.js','React','TypeScript'],
+  color:'#f472b6'
+},
   ];
 
   const CLONES_WITH_IMAGES = CLONES.map(c => ({ ...c, image: PROJECT_IMAGES[c.id] }));
@@ -1138,8 +1178,8 @@ export default function Portfolio() {
             I work across the full stack — from databases and APIs to pixel‑perfect UIs — always eager to learn new tools and technologies.
           </p>
           <div className="hero-ctas">
-            <a  className="cta-primary" href="/anyia_favour_cv.pdf"
-            download="Anyia_Favour_CV.pdf"              
+            <a  className="cta-primary" href="/Anyia_Favour_CV_White.docx"
+            download="Anyia_Favour_CV_White.docx"              
 >Download CV  <Icon name="arrowRight" size={14}/></a>
             <a href="#contact"  className="cta-secondary" onClick={closeMenu}><Icon name="send" size={13}/> Let's Talk</a>
           </div>
