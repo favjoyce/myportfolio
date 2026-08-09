@@ -1178,8 +1178,8 @@ export default function Portfolio() {
             I work across the full stack — from databases and APIs to pixel‑perfect UIs — always eager to learn new tools and technologies.
           </p>
           <div className="hero-ctas">
-            <a  className="cta-primary" href="/Anyia_Favour_CV_White.docx"
-            download="Anyia_Favour_CV_White.docx"              
+            <a  className="cta-primary" href="/Anyia_Favour_CV_White.pdf"
+            download="Anyia_Favour_CV_White.pdf"              
 >Download CV  <Icon name="arrowRight" size={14}/></a>
             <a href="#contact"  className="cta-secondary" onClick={closeMenu}><Icon name="send" size={13}/> Let's Talk</a>
           </div>
